@@ -5,7 +5,7 @@ import Join from "../Components/Join/Join";
 
 export const MainRouter = () => {
   return useRoutes([
+    { path: "/", element: <Join /> },
     { path: "/chat", element: <Chat /> },
-    { path: "/join", element: <Join /> },
   ]);
 };
