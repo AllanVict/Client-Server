@@ -21,7 +21,7 @@ const Chat = () => {
 
   useEffect(() => {
     setUserName(username);
-    const socket = io("server-lime-three.vercel.app:80");
+    const socket = io("http://localhost:80");
     socket.on("receive_message", (data) => {
       setUserList((current) => [...current, data]);
     });
@@ -39,7 +39,7 @@ const Chat = () => {
   }, [userList]);
 
   const handleSendMessage = async () => {
-    const socket = await io("server-lime-three.vercel.app:80");
+    const socket = await io("http://localhost:80");
     if (!userMessage.trim()) return;
 
     socket.emit("message", { userName, userMessage });
