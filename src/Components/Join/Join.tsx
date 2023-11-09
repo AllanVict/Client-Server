@@ -16,7 +16,7 @@ const Join = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     if (userName.trim() !== "") {
       e.preventDefault();
-      const socket = await io.connect("http://localhost:80");
+      const socket = await io.connect("server-lime-three.vercel.app:80");
       socket.emit("Nome", userName);
 
       alert(`Usuário ${userName} logado...`);
