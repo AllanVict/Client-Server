@@ -16,18 +16,6 @@ Desenvolvi um projeto de chat em tempo real no lado do cliente utilizando um con
 - React Router Dom:
   Implementei o sistema de roteamento do React Router Dom para gerenciar a navegação entre diferentes partes da aplicação, proporcionando uma experiência de usuário mais fluida.
 
-## Back-end:
-
-### Desenvolvi o servidor do chat em tempo real utilizando um conjunto robusto de tecnologias:
-
-- Node.js + Express:
-  Escolhi Node.js como ambiente de execução e utilizei o framework Express para construir um servidor eficiente e escalável.
-
-- Socket.io:
-  Implementei o Socket.io para facilitar a comunicação em tempo real entre o cliente e o servidor, proporcionando uma experiência de chat instantânea.
-
-- <a href="https://github.com/AllanVict/Server-Client" target="_blank">Link para o Repositório do Back-End</a>
-  
 
 ## Instalação Front-End
 
@@ -40,3 +28,5 @@ Desenvolvi um projeto de chat em tempo real no lado do cliente utilizando um con
 ### Para rodar
 
 - `npm start`
+
+- <a href="https://github.com/AllanVict/Server-Client" target="_blank">Link para o Repositório do Back-End</a>
