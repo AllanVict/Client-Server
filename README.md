@@ -1,27 +1,39 @@
-# React + TypeScript + Vite
+# Chat em tempo real
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Desenvolvi um projeto de chat em tempo real no lado do cliente utilizando um conjunto de tecnologias modernas e eficientes:
 
-Currently, two official plugins are available:
+## Front-end
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Vite:
+  Optei por Vite como ambiente de desenvolvimento para garantir uma inicialização rápida e uma experiência de desenvolvimento eficaz.
 
-## Expanding the ESLint configuration
+- Typescript:
+  Utilizei Typescript para trazer uma camada adicional de segurança ao código, melhorando a manutenibilidade e fornecendo autocompletar em toda a aplicação.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Tailwind CSS:
+  Adotei o framework Tailwind para estilização CSS, o que acelerou significativamente o processo de design e permitiu uma consistência visual em toda a aplicação.
 
-- Configure the top-level `parserOptions` property like this:
+- React Router Dom:
+  Implementei o sistema de roteamento do React Router Dom para gerenciar a navegação entre diferentes partes da aplicação, proporcionando uma experiência de usuário mais fluida.
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+## Back-end:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Desenvolvi o servidor do chat em tempo real utilizando um conjunto robusto de tecnologias:
+
+- Node.js + Express:
+  Escolhi Node.js como ambiente de execução e utilizei o framework Express para construir um servidor eficiente e escalável.
+
+- Socket.io:
+  Implementei o Socket.io para facilitar a comunicação em tempo real entre o cliente e o servidor, proporcionando uma experiência de chat instantânea.
+
+## Instalação Front-End
+
+- `npm install`
+- `npm i react-router-dom` - Rotas
+- `npm i socket.io` - Para Server
+- `npm i socket.io-client` - Para Client
+- `npm i @mui/icons-material` - Icones
+
+### Para rodar
+
+- `npm start`
